@@ -1,0 +1,30 @@
+# CDK1 Regulation (SINDy Rational)
+# ------------------------------------------------------
+
+#-------------------------------------------------------
+# Parameter values
+#-------------------------------------------------------
+par a1=6.091
+par b1=4.541
+par c1=0.006395
+par d1=0.004393
+par e1=0.007161
+par f1=0.002047
+
+############### 1D model ###################
+ds/dt = (-a1*s^9 + b1*s^8 - c1*s + d1)/(s^8 + e1*s + f1)
+
+
+# XPP settings
+@ meth=cvode, tol=1e-3,atol=1e-6, total=2000
+@ bounds=10000000000, xp=t,  yp=s
+@ xlo=0, xhi=200, ylo=0, yhi=200
+
+#AUTO settings
+@ parmin=0, parmax=1
+@ autoxmin=0, autoymin=0, autoxmax=0.2 autoymax=1
+@ Nmax=20000, Ds=-0.0002, dsmin=0.0001, dsmax=0.01, Normmax=10000
+ 
+
+done
+

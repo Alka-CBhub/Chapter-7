@@ -1,0 +1,25 @@
+# CDK1-APC Regulation (Rational)
+# ------------------------------------------------------
+
+#-------------------------------------------------------
+# Parameter values
+#-------------------------------------------------------
+par a1=3, b1=1.5, c1=0.00585938, d1=0.00390625
+par a2=4, b2=3, c2=0.00390625, d2=0.00390625
+
+############### 2D model ###################
+x1' = (-a1*x1*x2^8 + b1*x2^8 + c1)/(x2^8 + d1)
+x2' = (-a2*x1^8*x2 + b2*x1^8 - c2*x2)/(x1^8 + d2)
+
+# XPP settings
+@ meth=cvode, tol=1e-3,atol=1e-6, total=2000
+@ bounds=10000000000, xp=t,  yp=x1
+@ xlo=0, xhi=200, ylo=0, yhi=200
+
+#AUTO settings
+@ parmin=0, parmax=5
+@ autoxmin=0, autoymin=0, autoxmax=100 autoymax=5
+@ Nmax=20000, Ds=-0.0002, dsmin=0.0001, dsmax=0.01, Normmax=10000
+ 
+
+done

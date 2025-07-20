@@ -1,0 +1,31 @@
+Sensitivities Result:
+
+Sensitivities array
+
+Rows:    Target functions, All Variables of the model
+Columns: Variables 1, All Parameter Values
+	(R1).a1	(R1).b1	(R1).c1	(R1).d1	(R2).a2	(R2).b2	(R2).c2	(R2).d2
+[APC]	-0.119216	0.217386	5.36572	0	-0.093311	0.139407	-11.4409	0
+[CDK1]	-0.113817	0.208446	5.13538	0	0.0538592	-0.0800394	6.58911	0
+
+Scaled sensitivities array
+
+Rows:    Target functions, All Variables of the model
+Columns: Variables 1, All Parameter Values
+	(R1).a1	(R1).b1	(R1).c1	(R1).d1	(R2).a2	(R2).b2	(R2).c2	(R2).d2
+[APC]	-0.533953	0.486822	0.0469381	0	-0.557236	0.624387	-0.0667214	0
+[CDK1]	-0.622852	0.570349	0.0548884	0	0.392985	-0.438007	0.0469508	0
+
+Summarized sensitivities array
+
+Rows: Variables 1, All Parameter Values
+(R1).a1	0.820396
+(R1).b1	0.749862
+(R1).c1	0.0722213
+(R1).d1	0
+(R2).a2	0.681872
+(R2).b2	0.762699
+(R2).c2	0.0815851
+(R2).d2	0
+
+

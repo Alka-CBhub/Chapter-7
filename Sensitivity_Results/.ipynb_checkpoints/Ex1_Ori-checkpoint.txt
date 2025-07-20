@@ -1,0 +1,30 @@
+Sensitivities Result:
+
+Sensitivities array
+
+Rows: Variables 1, All Parameter Values
+(R1).alpha1	0.179533
+(R1).beta1	-0.13372
+(R1).alpha3	0.0439607
+(R1).n3	0.00207756
+(R1).K3	-0.083824
+
+Scaled sensitivities array
+
+Rows: Variables 1, All Parameter Values
+(R1).alpha1	0.361498
+(R1).beta1	-0.538503
+(R1).alpha3	0.177034
+(R1).n3	0.0223107
+(R1).K3	-0.0562611
+
+Summarized sensitivities array
+
+Rows: Variables 1, All Parameter Values
+(R1).alpha1	0
+(R1).beta1	0
+(R1).alpha3	0
+(R1).n3	0
+(R1).K3	0
+
+
